@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="631.0" prefWidth="922.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatApp.controller.ChatPageController">
+   <children>
+      <Button fx:id="homeButton" layoutX="381.0" layoutY="540.0" mnemonicParsing="false" onAction="#goToHomePage" style="-fx-font-size: 16 ariel;" styleClass="buttonStyle" text="Home" />
+      <TextArea fx:id="chatArea" layoutX="166.0" layoutY="72.0" prefHeight="384.0" prefWidth="494.0" stylesheets="@style.css" />
+      <TextField fx:id="textField" layoutX="166.0" layoutY="465.0" onAction="#sendMessageFromTextField" prefHeight="35.0" prefWidth="429.0" />
+      <Button layoutX="602.0" layoutY="465.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="25.0" prefWidth="58.0" style="-fx-font-size: 16 ariel;" styleClass="buttonStyle" text="Send" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <ScrollPane fx:id="scrollChatArea" fitToWidth="true" layoutX="174.0" layoutY="79.0" prefHeight="375.0" prefWidth="481.0">
+         <content>
+            <VBox fx:id="vboxChatArea" prefHeight="372.0" prefWidth="476.0" />
+         </content>
+      </ScrollPane>
+      <Text fx:id="otherUserText" layoutX="380.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 24;" styleClass="textStyle" />
+   </children>
+</AnchorPane>

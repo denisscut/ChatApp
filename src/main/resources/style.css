@@ -1,0 +1,32 @@
+.background{
+    -fx-background-color: #32302f;
+}
+
+.labelStyle {
+    -fx-text-fill: #d79921;
+}
+
+.textStyle {
+    -fx-fill: #d79921;
+}
+
+.textFieldStyle {
+    -fx-background-color: #fbf1c7;
+    -fx-fill-color: #32302f;
+}
+
+.tableStyle {
+    -fx-color: #d79921;
+}
+
+.buttonStyle {
+    -fx-background-color: #d79921;
+    -fx-color: #d79921;
+}
+
+.buttonStyle:hover {
+    -fx-background-color: #fabd2f;
+}
+.buttonStyle:pressed {
+    -fx-background-color: #d79921;
+}

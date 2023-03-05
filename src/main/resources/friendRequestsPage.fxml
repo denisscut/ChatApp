@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="521.0" prefWidth="828.0" style="-fx-font-size: 16 ariel;" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatApp.controller.FriendRequestsPageController">
+   <children>
+      <TableView fx:id="friendshipsTableView" layoutX="54.0" layoutY="73.0" prefHeight="317.0" prefWidth="706.0" style="-fx-font-size: 16;">
+        <columns>
+          <TableColumn fx:id="senderColumnName" prefWidth="200.0000228881836" text="Sender" />
+            <TableColumn fx:id="receiverColumnName" prefWidth="200.79998779296875" text="Receiver" />
+          <TableColumn fx:id="statusColumnId" minWidth="0.0" prefWidth="129.60006713867188" text="Status" />
+            <TableColumn fx:id="requestDateColumnId" prefWidth="169.60003662109375" text="Request Date" />
+        </columns>
+         <styleClass>
+            <String fx:value="tableStyle" />
+            <String fx:value="textStyle" />
+            <String fx:value="textFieldStyle" />
+         </styleClass>
+      </TableView>
+      <Text fx:id="titleTextId" layoutX="340.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18 ariel;" styleClass="textStyle" text="Friend Requests" wrappingWidth="133.193359375" />
+      <Button fx:id="homeButtonId" layoutX="280.0" layoutY="431.0" mnemonicParsing="false" onAction="#goToHomePage" styleClass="buttonStyle" text="Home" />
+      <Button fx:id="acceptButtonId" layoutX="372.0" layoutY="431.0" mnemonicParsing="false" onAction="#acceptFriendRequest" styleClass="buttonStyle" text="Accept" />
+      <Button fx:id="declineButtonId" layoutX="463.0" layoutY="431.0" mnemonicParsing="false" onAction="#declineFriendRequest" styleClass="buttonStyle" text="Decline" />
+   </children>
+</AnchorPane>
